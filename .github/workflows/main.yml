@@ -40,8 +40,7 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           eval "$(ssh-agent -s)"
-          ssh-add ~/.ssh/"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCcys8uN/5ROCKAUw2pa3Umv4cNT8nM9HNLNTq8QlYNtHBwXrnUP+1XBilYNoQkzAJpaUw1zMjqtPRkBl4E7ozmmAKu/eGEzPGGn9HvTgVc8ZZgczwJWvqT/f0SU5PnKORipGLUvnMrieSPhq1N7+HxlvK0bUzYjEOn/wjujS5uSDaGqchcdu/pEK3XTTa1/pwwJXB5kH1gJ9Rv+W/z4CpJ3izfTD4zLuzJs+NR/2rZCzCZ0RVEYMmbiYa1tlFd5rDbSIKWEambELDTtoH9edPl8Ywtky2CUq29xq4fOoara9fmG6Sbk2yyi6IHDC9OttS6ZmKRHDlUsbfPrqnCdq0IhSnoP1OQvzieg6CkHwL71NxmgbnRBKxTQJxn6QfEKZRpikHF5mNOoI2Zagv9XoSTdkk7F3h0OPAdfuOFpMHkycaGsH+nTQ4Ut7Q+Yndnxsqbc6H7cCX5gc76Jb/9+J/3Go00M5iQt3LnaMeVtuwG6vdOP8SaSDgbFYZnNdv+4ja+bV04kuBsTemVPhG+hOP6HaX/3cJHI7HIX799jpi03ybVzMp+E7djaX+Cs3JQBkL37Dq24rcSTT6yVKGz/oWo/8guqbYpksT3SYTBcm7RwYuJK02eHSOJbRS2pHMb5fRXNxxNc0UWRXZKII+JQOHtPBCYgXBuwDsCSc3yvt9U+Q== Praktikan6"
-          echo "Cek folder project";
+          ssh-add ~/.ssh/ssh-praktikan6
           [ ! -d "${HOME}/senpro/534368/modul02/senpro-github-action/" ] &&
           {
             echo "Repository belum di-clone. Cloning...";
