@@ -21,10 +21,10 @@ jobs:
           cache: "npm"
       - run: npm i
       - run: npm run build
-			
+
 	deploy:
-  needs: test-build
-  runs-on: ubuntu-latest
+  	needs: test-build
+		runs-on: ubuntu-latest
 
   strategy:
     matrix:
